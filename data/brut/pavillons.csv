@@ -1,0 +1,8 @@
+pavillon_id,nom,vocation,annee_construction,superficie_m2,nb_etages
+PAV-A,Pavillon des Érables,Soins aigus,2014,62000,9
+PAV-B,Pavillon Héritage,Soins de longue durée,1958,31000,7
+PAV-C,Pavillon du Fleuve,Chirurgie et bloc opératoire,1987,44000,8
+PAV-D,Pavillon Boréal,Mère-enfant,2014,38000,6
+PAV-E,Pavillon de la Recherche,Laboratoires,1996,27000,6
+PAV-F,Pavillon Laurentien,Ambulatoire et imagerie,1972,23000,5
+PAV-G,Centrale énergétique,Services techniques,1972,9000,3

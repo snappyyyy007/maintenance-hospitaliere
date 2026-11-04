@@ -1,0 +1,106 @@
+{
+  "graine": 42,
+  "periode": [
+    "2023-10-01",
+    "2026-09-30"
+  ],
+  "lignes_brutes": 8696,
+  "bons_uniques": 8627,
+  "defauts_injectes": {
+    "categories_mal_ecrites": 517,
+    "pavillons_mal_ecrits": 129,
+    "fermetures_avant_creation": 33,
+    "couts_negatifs": 21,
+    "couts_pieces_manquants": 168,
+    "techniciens_manquants": 126,
+    "heures_aberrantes": 8,
+    "dates_format_jj_mm_aaaa": 431,
+    "doublons_exacts": 69
+  },
+  "points_chauds": [
+    {
+      "local_id": "C-043",
+      "categorie": "Plomberie",
+      "sous_categorie": "Drain bouché",
+      "occurrences": 12
+    },
+    {
+      "local_id": "C-321",
+      "categorie": "CVC",
+      "sous_categorie": "Température inadéquate",
+      "occurrences": 13
+    },
+    {
+      "local_id": "C-537",
+      "categorie": "Électricité",
+      "sous_categorie": "Éclairage défectueux",
+      "occurrences": 11
+    },
+    {
+      "local_id": "C-716",
+      "categorie": "Plomberie",
+      "sous_categorie": "Drain bouché",
+      "occurrences": 13
+    },
+    {
+      "local_id": "F-127",
+      "categorie": "Électricité",
+      "sous_categorie": "Appel infirmier",
+      "occurrences": 8
+    },
+    {
+      "local_id": "B-110",
+      "categorie": "CVC",
+      "sous_categorie": "Bruit anormal",
+      "occurrences": 7
+    },
+    {
+      "local_id": "B-436",
+      "categorie": "Plomberie",
+      "sous_categorie": "Toilette défectueuse",
+      "occurrences": 10
+    },
+    {
+      "local_id": "C-221",
+      "categorie": "Plomberie",
+      "sous_categorie": "Eau chaude insuffisante",
+      "occurrences": 6
+    },
+    {
+      "local_id": "F-111",
+      "categorie": "CVC",
+      "sous_categorie": "Ventilation faible",
+      "occurrences": 8
+    },
+    {
+      "local_id": "B-320",
+      "categorie": "CVC",
+      "sous_categorie": "Température inadéquate",
+      "occurrences": 14
+    },
+    {
+      "local_id": "F-206",
+      "categorie": "Plomberie",
+      "sous_categorie": "Fuite de tuyau",
+      "occurrences": 8
+    },
+    {
+      "local_id": "B-440",
+      "categorie": "Plomberie",
+      "sous_categorie": "Fuite de tuyau",
+      "occurrences": 11
+    },
+    {
+      "local_id": "C-224",
+      "categorie": "Plomberie",
+      "sous_categorie": "Toilette défectueuse",
+      "occurrences": 7
+    },
+    {
+      "local_id": "F-137",
+      "categorie": "Électricité",
+      "sous_categorie": "Éclairage défectueux",
+      "occurrences": 8
+    }
+  ]
+}

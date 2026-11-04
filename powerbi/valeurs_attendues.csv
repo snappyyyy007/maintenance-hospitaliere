@@ -1,0 +1,148 @@
+contexte,mesure,valeur
+Global,Nb bons,8397.0
+Global,Nb bons fermés,8359.0
+Global,Nb bons ouverts,38.0
+Global,Coût total,5368405.16
+Global,Coût moyen par bon fermé,642.2305
+Global,Délai moyen de fermeture (h),157.2672
+Global,Délai médian de fermeture (h),62.7172
+Global,Taux de respect de la cible,0.8355
+Global,Nb récidives,1122.0
+Global,Taux de récidive,0.1498
+Global,Coût des récidives,481564.46
+Global,Part du coût en récidive,0.0897
+Global,Nb dégâts d'eau,401.0
+Global,Coût des dégâts d'eau,2690458.21
+Global,Coût par m²,22.9419
+Global,Dégâts d'eau par 10 000 m²,17.1368
+Global,Nb bons en quarantaine,62.0
+PAV-A,Nb bons,1250.0
+PAV-A,Nb bons fermés,1241.0
+PAV-A,Nb bons ouverts,9.0
+PAV-A,Coût total,787786.54
+PAV-A,Coût moyen par bon fermé,634.7998
+PAV-A,Délai moyen de fermeture (h),159.3694
+PAV-A,Délai médian de fermeture (h),67.8267
+PAV-A,Taux de respect de la cible,0.8574
+PAV-A,Nb récidives,83.0
+PAV-A,Taux de récidive,0.0764
+PAV-A,Coût des récidives,31575.77
+PAV-A,Part du coût en récidive,0.0401
+PAV-A,Nb dégâts d'eau,47.0
+PAV-A,Coût des dégâts d'eau,348711.62
+PAV-A,Coût par m²,12.7062
+PAV-A,Dégâts d'eau par 10 000 m²,7.5806
+PAV-B,Nb bons,2117.0
+PAV-B,Nb bons fermés,2110.0
+PAV-B,Nb bons ouverts,7.0
+PAV-B,Coût total,1421848.89
+PAV-B,Coût moyen par bon fermé,673.862
+PAV-B,Délai moyen de fermeture (h),154.0461
+PAV-B,Délai médian de fermeture (h),63.4089
+PAV-B,Taux de respect de la cible,0.809
+PAV-B,Nb récidives,450.0
+PAV-B,Taux de récidive,0.2345
+PAV-B,Coût des récidives,231507.48
+PAV-B,Part du coût en récidive,0.1628
+PAV-B,Nb dégâts d'eau,110.0
+PAV-B,Coût des dégâts d'eau,747576.58
+PAV-B,Coût par m²,45.8661
+PAV-B,Dégâts d'eau par 10 000 m²,35.4839
+PAV-C,Nb bons,1879.0
+PAV-C,Nb bons fermés,1871.0
+PAV-C,Nb bons ouverts,8.0
+PAV-C,Coût total,1184339.28
+PAV-C,Coût moyen par bon fermé,632.998
+PAV-C,Délai moyen de fermeture (h),155.1999
+PAV-C,Délai médian de fermeture (h),59.7842
+PAV-C,Taux de respect de la cible,0.8365
+PAV-C,Nb récidives,286.0
+PAV-C,Taux de récidive,0.1687
+PAV-C,Coût des récidives,106540.16
+PAV-C,Part du coût en récidive,0.09
+PAV-C,Nb dégâts d'eau,95.0
+PAV-C,Coût des dégâts d'eau,576856.73
+PAV-C,Coût par m²,26.9168
+PAV-C,Dégâts d'eau par 10 000 m²,21.5909
+PAV-D,Nb bons,735.0
+PAV-D,Nb bons fermés,729.0
+PAV-D,Nb bons ouverts,6.0
+PAV-D,Coût total,420931.62
+PAV-D,Coût moyen par bon fermé,577.4096
+PAV-D,Délai moyen de fermeture (h),160.3591
+PAV-D,Délai médian de fermeture (h),58.5997
+PAV-D,Taux de respect de la cible,0.8546
+PAV-D,Nb récidives,46.0
+PAV-D,Taux de récidive,0.0718
+PAV-D,Coût des récidives,24730.93
+PAV-D,Part du coût en récidive,0.0588
+PAV-D,Nb dégâts d'eau,32.0
+PAV-D,Coût des dégâts d'eau,184875.6
+PAV-D,Coût par m²,11.0771
+PAV-D,Dégâts d'eau par 10 000 m²,8.4211
+PAV-E,Nb bons,924.0
+PAV-E,Nb bons fermés,921.0
+PAV-E,Nb bons ouverts,3.0
+PAV-E,Coût total,506404.54
+PAV-E,Coût moyen par bon fermé,549.8421
+PAV-E,Délai moyen de fermeture (h),167.7762
+PAV-E,Délai médian de fermeture (h),66.9675
+PAV-E,Taux de respect de la cible,0.8415
+PAV-E,Nb récidives,81.0
+PAV-E,Taux de récidive,0.1005
+PAV-E,Coût des récidives,26065.82
+PAV-E,Part du coût en récidive,0.0515
+PAV-E,Nb dégâts d'eau,33.0
+PAV-E,Coût des dégâts d'eau,233317.83
+PAV-E,Coût par m²,18.7557
+PAV-E,Dégâts d'eau par 10 000 m²,12.2222
+PAV-F,Nb bons,1113.0
+PAV-F,Nb bons fermés,1109.0
+PAV-F,Nb bons ouverts,4.0
+PAV-F,Coût total,729568.35
+PAV-F,Coût moyen par bon fermé,657.8615
+PAV-F,Délai moyen de fermeture (h),160.4577
+PAV-F,Délai médian de fermeture (h),63.7328
+PAV-F,Taux de respect de la cible,0.8395
+PAV-F,Nb récidives,137.0
+PAV-F,Taux de récidive,0.138
+PAV-F,Coût des récidives,43609.16
+PAV-F,Part du coût en récidive,0.0598
+PAV-F,Nb dégâts d'eau,66.0
+PAV-F,Coût des dégâts d'eau,410173.19
+PAV-F,Coût par m²,31.7204
+PAV-F,Dégâts d'eau par 10 000 m²,28.6957
+PAV-G,Nb bons,379.0
+PAV-G,Nb bons fermés,378.0
+PAV-G,Nb bons ouverts,1.0
+PAV-G,Coût total,317525.94
+PAV-G,Coût moyen par bon fermé,840.0157
+PAV-G,Délai moyen de fermeture (h),137.6489
+PAV-G,Délai médian de fermeture (h),53.7642
+PAV-G,Taux de respect de la cible,0.8439
+PAV-G,Nb récidives,39.0
+PAV-G,Taux de récidive,0.1124
+PAV-G,Coût des récidives,17535.14
+PAV-G,Part du coût en récidive,0.0552
+PAV-G,Nb dégâts d'eau,18.0
+PAV-G,Coût des dégâts d'eau,188946.66
+PAV-G,Coût par m²,35.2807
+PAV-G,Dégâts d'eau par 10 000 m²,20.0
+Année 2026,Nb bons,2064.0
+Année 2026,Nb bons fermés,2026.0
+Année 2026,Nb bons ouverts,38.0
+Année 2026,Coût total,1366217.35
+Année 2026,Coût moyen par bon fermé,674.3422
+Année 2026,Délai moyen de fermeture (h),152.2657
+Année 2026,Délai médian de fermeture (h),60.9486
+Année 2026,Taux de respect de la cible,0.8351
+Année 2026,Nb récidives,225.0
+Année 2026,Taux de récidive,0.123
+Année 2026,Coût des récidives,96466.28
+Année 2026,Part du coût en récidive,0.0706
+Année 2026,Nb dégâts d'eau,102.0
+Année 2026,Coût des dégâts d'eau,727340.11
+Année 2026,Nb bons N-1,2234.0
+Année 2026,Variation annuelle des bons,-0.0761
+Année 2026,Coût cumulé annuel,1366217.35
+Année 2026,Bons fermés par date de fermeture,2068.0

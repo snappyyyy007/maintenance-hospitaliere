@@ -1,0 +1,665 @@
+local_id,pavillon_id,etage,type_local,criticite
+A-118,PAV-A,1,Unité de soins,2
+A-244,PAV-A,2,Laboratoire,2
+A-828,PAV-A,8,Unité de soins,2
+A-133,PAV-A,1,Unité de soins,2
+A-842,PAV-A,8,Unité de soins,2
+A-638,PAV-A,6,Unité de soins,2
+A-011,PAV-A,0,Laboratoire,2
+A-514,PAV-A,5,Unité de soins,2
+A-525,PAV-A,5,Unité de soins,2
+A-552,PAV-A,5,Salle mécanique,2
+A-760,PAV-A,7,Bureau,1
+A-841,PAV-A,8,Unité de soins,2
+A-546,PAV-A,5,Corridor,1
+A-306,PAV-A,3,Laboratoire,2
+A-130,PAV-A,1,Bureau,1
+A-523,PAV-A,5,Unité de soins,2
+A-444,PAV-A,4,Salle mécanique,2
+A-216,PAV-A,2,Bureau,1
+A-660,PAV-A,6,Soins intensifs,3
+A-821,PAV-A,8,Unité de soins,2
+A-003,PAV-A,0,Unité de soins,2
+A-614,PAV-A,6,Bureau,1
+A-532,PAV-A,5,Unité de soins,2
+A-709,PAV-A,7,Unité de soins,2
+A-848,PAV-A,8,Salle mécanique,2
+A-609,PAV-A,6,Bureau,1
+A-156,PAV-A,1,Bureau,1
+A-228,PAV-A,2,Imagerie,2
+A-630,PAV-A,6,Bureau,1
+A-801,PAV-A,8,Unité de soins,2
+A-135,PAV-A,1,Unité de soins,2
+A-528,PAV-A,5,Unité de soins,2
+A-057,PAV-A,0,Soins intensifs,3
+A-833,PAV-A,8,Laboratoire,2
+A-433,PAV-A,4,Bureau,1
+A-211,PAV-A,2,Bureau,1
+A-839,PAV-A,8,Stérilisation,3
+A-024,PAV-A,0,Unité de soins,2
+A-416,PAV-A,4,Unité de soins,2
+A-132,PAV-A,1,Unité de soins,2
+A-809,PAV-A,8,Unité de soins,2
+A-834,PAV-A,8,Unité de soins,2
+A-326,PAV-A,3,Salle mécanique,2
+A-534,PAV-A,5,Bureau,1
+A-322,PAV-A,3,Bureau,1
+A-815,PAV-A,8,Unité de soins,2
+A-058,PAV-A,0,Unité de soins,2
+A-516,PAV-A,5,Unité de soins,2
+A-731,PAV-A,7,Unité de soins,2
+A-343,PAV-A,3,Unité de soins,2
+A-656,PAV-A,6,Imagerie,2
+A-147,PAV-A,1,Unité de soins,2
+A-113,PAV-A,1,Unité de soins,2
+A-218,PAV-A,2,Bureau,1
+A-155,PAV-A,1,Bloc opératoire,3
+A-001,PAV-A,0,Unité de soins,2
+A-451,PAV-A,4,Bloc opératoire,3
+A-647,PAV-A,6,Salle mécanique,2
+A-832,PAV-A,8,Salle mécanique,2
+A-404,PAV-A,4,Unité de soins,2
+A-755,PAV-A,7,Bureau,1
+A-006,PAV-A,0,Soins intensifs,3
+A-144,PAV-A,1,Corridor,1
+A-657,PAV-A,6,Unité de soins,2
+A-027,PAV-A,0,Corridor,1
+A-817,PAV-A,8,Unité de soins,2
+A-526,PAV-A,5,Unité de soins,2
+A-460,PAV-A,4,Bureau,1
+A-140,PAV-A,1,Unité de soins,2
+A-114,PAV-A,1,Bloc opératoire,3
+A-257,PAV-A,2,Bloc opératoire,3
+A-311,PAV-A,3,Bureau,1
+A-840,PAV-A,8,Salle mécanique,2
+A-853,PAV-A,8,Unité de soins,2
+A-109,PAV-A,1,Bloc opératoire,3
+A-110,PAV-A,1,Laboratoire,2
+A-314,PAV-A,3,Salle mécanique,2
+A-417,PAV-A,4,Unité de soins,2
+A-028,PAV-A,0,Unité de soins,2
+A-050,PAV-A,0,Unité de soins,2
+A-429,PAV-A,4,Unité de soins,2
+A-608,PAV-A,6,Corridor,1
+A-254,PAV-A,2,Corridor,1
+A-551,PAV-A,5,Urgence,3
+A-014,PAV-A,0,Unité de soins,2
+A-136,PAV-A,1,Bureau,1
+A-648,PAV-A,6,Unité de soins,2
+A-352,PAV-A,3,Cuisine,2
+A-351,PAV-A,3,Bloc opératoire,3
+A-655,PAV-A,6,Cuisine,2
+A-330,PAV-A,3,Imagerie,2
+A-505,PAV-A,5,Unité de soins,2
+A-802,PAV-A,8,Unité de soins,2
+A-651,PAV-A,6,Corridor,1
+A-858,PAV-A,8,Imagerie,2
+A-428,PAV-A,4,Unité de soins,2
+A-305,PAV-A,3,Bureau,1
+A-543,PAV-A,5,Bureau,1
+A-443,PAV-A,4,Bureau,1
+A-636,PAV-A,6,Imagerie,2
+A-625,PAV-A,6,Salle mécanique,2
+A-220,PAV-A,2,Corridor,1
+A-529,PAV-A,5,Bureau,1
+A-219,PAV-A,2,Salle mécanique,2
+A-549,PAV-A,5,Unité de soins,2
+A-413,PAV-A,4,Unité de soins,2
+A-031,PAV-A,0,Unité de soins,2
+A-157,PAV-A,1,Bureau,1
+A-325,PAV-A,3,Salle mécanique,2
+A-345,PAV-A,3,Unité de soins,2
+A-115,PAV-A,1,Laboratoire,2
+A-836,PAV-A,8,Bureau,1
+A-152,PAV-A,1,Bureau,1
+A-747,PAV-A,7,Corridor,1
+A-231,PAV-A,2,Laboratoire,2
+A-318,PAV-A,3,Imagerie,2
+A-816,PAV-A,8,Bureau,1
+A-116,PAV-A,1,Salle mécanique,2
+A-506,PAV-A,5,Urgence,3
+A-310,PAV-A,3,Bureau,1
+A-122,PAV-A,1,Bureau,1
+A-654,PAV-A,6,Unité de soins,2
+A-049,PAV-A,0,Cuisine,2
+A-723,PAV-A,7,Unité de soins,2
+A-332,PAV-A,3,Unité de soins,2
+A-259,PAV-A,2,Cuisine,2
+A-826,PAV-A,8,Unité de soins,2
+A-717,PAV-A,7,Unité de soins,2
+A-148,PAV-A,1,Bureau,1
+A-016,PAV-A,0,Corridor,1
+A-411,PAV-A,4,Salle mécanique,2
+A-111,PAV-A,1,Laboratoire,2
+A-160,PAV-A,1,Corridor,1
+A-646,PAV-A,6,Bureau,1
+A-350,PAV-A,3,Unité de soins,2
+A-137,PAV-A,1,Imagerie,2
+A-724,PAV-A,7,Unité de soins,2
+A-728,PAV-A,7,Salle mécanique,2
+A-818,PAV-A,8,Soins intensifs,3
+A-830,PAV-A,8,Laboratoire,2
+A-129,PAV-A,1,Unité de soins,2
+A-743,PAV-A,7,Corridor,1
+A-021,PAV-A,0,Bureau,1
+A-317,PAV-A,3,Bureau,1
+A-434,PAV-A,4,Corridor,1
+A-127,PAV-A,1,Unité de soins,2
+A-342,PAV-A,3,Salle mécanique,2
+A-706,PAV-A,7,Imagerie,2
+A-620,PAV-A,6,Salle mécanique,2
+A-845,PAV-A,8,Unité de soins,2
+A-408,PAV-A,4,Unité de soins,2
+A-535,PAV-A,5,Unité de soins,2
+A-248,PAV-A,2,Unité de soins,2
+A-807,PAV-A,8,Corridor,1
+A-412,PAV-A,4,Unité de soins,2
+A-803,PAV-A,8,Unité de soins,2
+A-701,PAV-A,7,Unité de soins,2
+A-722,PAV-A,7,Bureau,1
+A-056,PAV-A,0,Unité de soins,2
+A-105,PAV-A,1,Bureau,1
+A-052,PAV-A,0,Unité de soins,2
+A-859,PAV-A,8,Bureau,1
+A-640,PAV-A,6,Unité de soins,2
+A-715,PAV-A,7,Unité de soins,2
+A-430,PAV-A,4,Bureau,1
+A-335,PAV-A,3,Bureau,1
+A-253,PAV-A,2,Urgence,3
+A-020,PAV-A,0,Unité de soins,2
+B-518,PAV-B,5,Bureau,1
+B-339,PAV-B,3,Laboratoire,2
+B-044,PAV-B,0,Bureau,1
+B-402,PAV-B,4,Corridor,1
+B-537,PAV-B,5,Imagerie,2
+B-634,PAV-B,6,Unité de soins,2
+B-238,PAV-B,2,Unité de soins,2
+B-606,PAV-B,6,Bureau,1
+B-343,PAV-B,3,Bureau,1
+B-145,PAV-B,1,Unité de soins,2
+B-553,PAV-B,5,Bloc opératoire,3
+B-021,PAV-B,0,Bureau,1
+B-026,PAV-B,0,Soins intensifs,3
+B-643,PAV-B,6,Stérilisation,3
+B-313,PAV-B,3,Cuisine,2
+B-441,PAV-B,4,Laboratoire,2
+B-036,PAV-B,0,Unité de soins,2
+B-245,PAV-B,2,Corridor,1
+B-039,PAV-B,0,Soins intensifs,3
+B-536,PAV-B,5,Unité de soins,2
+B-354,PAV-B,3,Unité de soins,2
+B-342,PAV-B,3,Bloc opératoire,3
+B-319,PAV-B,3,Bloc opératoire,3
+B-231,PAV-B,2,Urgence,3
+B-110,PAV-B,1,Bureau,1
+B-457,PAV-B,4,Bureau,1
+B-051,PAV-B,0,Unité de soins,2
+B-233,PAV-B,2,Bloc opératoire,3
+B-020,PAV-B,0,Unité de soins,2
+B-432,PAV-B,4,Stérilisation,3
+B-323,PAV-B,3,Bureau,1
+B-630,PAV-B,6,Corridor,1
+B-645,PAV-B,6,Unité de soins,2
+B-350,PAV-B,3,Unité de soins,2
+B-246,PAV-B,2,Laboratoire,2
+B-532,PAV-B,5,Stérilisation,3
+B-138,PAV-B,1,Bureau,1
+B-029,PAV-B,0,Cuisine,2
+B-310,PAV-B,3,Soins intensifs,3
+B-505,PAV-B,5,Soins intensifs,3
+B-055,PAV-B,0,Cuisine,2
+B-421,PAV-B,4,Bureau,1
+B-635,PAV-B,6,Bureau,1
+B-128,PAV-B,1,Laboratoire,2
+B-656,PAV-B,6,Corridor,1
+B-158,PAV-B,1,Salle mécanique,2
+B-219,PAV-B,2,Imagerie,2
+B-334,PAV-B,3,Unité de soins,2
+B-511,PAV-B,5,Imagerie,2
+B-440,PAV-B,4,Cuisine,2
+B-517,PAV-B,5,Unité de soins,2
+B-619,PAV-B,6,Bureau,1
+B-123,PAV-B,1,Unité de soins,2
+B-228,PAV-B,2,Corridor,1
+B-616,PAV-B,6,Bureau,1
+B-618,PAV-B,6,Salle mécanique,2
+B-648,PAV-B,6,Salle mécanique,2
+B-454,PAV-B,4,Laboratoire,2
+B-215,PAV-B,2,Unité de soins,2
+B-213,PAV-B,2,Unité de soins,2
+B-550,PAV-B,5,Laboratoire,2
+B-607,PAV-B,6,Unité de soins,2
+B-551,PAV-B,5,Unité de soins,2
+B-409,PAV-B,4,Bureau,1
+B-227,PAV-B,2,Unité de soins,2
+B-157,PAV-B,1,Laboratoire,2
+B-418,PAV-B,4,Bureau,1
+B-222,PAV-B,2,Laboratoire,2
+B-147,PAV-B,1,Cuisine,2
+B-352,PAV-B,3,Soins intensifs,3
+B-001,PAV-B,0,Imagerie,2
+B-253,PAV-B,2,Corridor,1
+B-436,PAV-B,4,Urgence,3
+B-405,PAV-B,4,Unité de soins,2
+B-320,PAV-B,3,Urgence,3
+B-003,PAV-B,0,Unité de soins,2
+B-316,PAV-B,3,Unité de soins,2
+B-124,PAV-B,1,Bureau,1
+B-535,PAV-B,5,Salle mécanique,2
+B-557,PAV-B,5,Laboratoire,2
+B-040,PAV-B,0,Imagerie,2
+B-224,PAV-B,2,Unité de soins,2
+B-355,PAV-B,3,Soins intensifs,3
+B-558,PAV-B,5,Bureau,1
+B-218,PAV-B,2,Unité de soins,2
+B-053,PAV-B,0,Bloc opératoire,3
+B-541,PAV-B,5,Unité de soins,2
+B-022,PAV-B,0,Unité de soins,2
+B-114,PAV-B,1,Laboratoire,2
+B-638,PAV-B,6,Corridor,1
+B-650,PAV-B,6,Unité de soins,2
+B-455,PAV-B,4,Unité de soins,2
+C-252,PAV-C,2,Corridor,1
+C-023,PAV-C,0,Unité de soins,2
+C-302,PAV-C,3,Corridor,1
+C-027,PAV-C,0,Unité de soins,2
+C-150,PAV-C,1,Unité de soins,2
+C-115,PAV-C,1,Bloc opératoire,3
+C-059,PAV-C,0,Laboratoire,2
+C-402,PAV-C,4,Bureau,1
+C-728,PAV-C,7,Bureau,1
+C-729,PAV-C,7,Unité de soins,2
+C-110,PAV-C,1,Unité de soins,2
+C-438,PAV-C,4,Corridor,1
+C-539,PAV-C,5,Bureau,1
+C-142,PAV-C,1,Cuisine,2
+C-357,PAV-C,3,Bureau,1
+C-526,PAV-C,5,Bureau,1
+C-121,PAV-C,1,Unité de soins,2
+C-544,PAV-C,5,Soins intensifs,3
+C-106,PAV-C,1,Laboratoire,2
+C-124,PAV-C,1,Bureau,1
+C-036,PAV-C,0,Corridor,1
+C-156,PAV-C,1,Bureau,1
+C-647,PAV-C,6,Unité de soins,2
+C-423,PAV-C,4,Corridor,1
+C-331,PAV-C,3,Unité de soins,2
+C-136,PAV-C,1,Bureau,1
+C-452,PAV-C,4,Corridor,1
+C-043,PAV-C,0,Corridor,1
+C-418,PAV-C,4,Unité de soins,2
+C-226,PAV-C,2,Corridor,1
+C-034,PAV-C,0,Unité de soins,2
+C-611,PAV-C,6,Bureau,1
+C-537,PAV-C,5,Bureau,1
+C-049,PAV-C,0,Unité de soins,2
+C-143,PAV-C,1,Unité de soins,2
+C-714,PAV-C,7,Bureau,1
+C-108,PAV-C,1,Bureau,1
+C-720,PAV-C,7,Bureau,1
+C-604,PAV-C,6,Stérilisation,3
+C-450,PAV-C,4,Bloc opératoire,3
+C-408,PAV-C,4,Unité de soins,2
+C-625,PAV-C,6,Unité de soins,2
+C-354,PAV-C,3,Bureau,1
+C-556,PAV-C,5,Unité de soins,2
+C-659,PAV-C,6,Unité de soins,2
+C-626,PAV-C,6,Unité de soins,2
+C-540,PAV-C,5,Unité de soins,2
+C-555,PAV-C,5,Unité de soins,2
+C-634,PAV-C,6,Corridor,1
+C-415,PAV-C,4,Laboratoire,2
+C-241,PAV-C,2,Unité de soins,2
+C-323,PAV-C,3,Urgence,3
+C-210,PAV-C,2,Soins intensifs,3
+C-249,PAV-C,2,Corridor,1
+C-749,PAV-C,7,Laboratoire,2
+C-541,PAV-C,5,Cuisine,2
+C-403,PAV-C,4,Bureau,1
+C-456,PAV-C,4,Unité de soins,2
+C-133,PAV-C,1,Corridor,1
+C-052,PAV-C,0,Bureau,1
+C-506,PAV-C,5,Unité de soins,2
+C-246,PAV-C,2,Unité de soins,2
+C-740,PAV-C,7,Bureau,1
+C-525,PAV-C,5,Urgence,3
+C-504,PAV-C,5,Salle mécanique,2
+C-507,PAV-C,5,Corridor,1
+C-238,PAV-C,2,Unité de soins,2
+C-542,PAV-C,5,Unité de soins,2
+C-646,PAV-C,6,Unité de soins,2
+C-442,PAV-C,4,Corridor,1
+C-254,PAV-C,2,Salle mécanique,2
+C-128,PAV-C,1,Salle mécanique,2
+C-012,PAV-C,0,Bureau,1
+C-532,PAV-C,5,Bloc opératoire,3
+C-219,PAV-C,2,Unité de soins,2
+C-135,PAV-C,1,Bureau,1
+C-057,PAV-C,0,Salle mécanique,2
+C-203,PAV-C,2,Laboratoire,2
+C-340,PAV-C,3,Soins intensifs,3
+C-716,PAV-C,7,Unité de soins,2
+C-713,PAV-C,7,Unité de soins,2
+C-719,PAV-C,7,Bureau,1
+C-653,PAV-C,6,Soins intensifs,3
+C-204,PAV-C,2,Cuisine,2
+C-149,PAV-C,1,Unité de soins,2
+C-710,PAV-C,7,Urgence,3
+C-527,PAV-C,5,Bloc opératoire,3
+C-007,PAV-C,0,Unité de soins,2
+C-509,PAV-C,5,Imagerie,2
+C-709,PAV-C,7,Unité de soins,2
+C-701,PAV-C,7,Bureau,1
+C-054,PAV-C,0,Unité de soins,2
+C-619,PAV-C,6,Unité de soins,2
+C-127,PAV-C,1,Unité de soins,2
+C-754,PAV-C,7,Unité de soins,2
+C-037,PAV-C,0,Corridor,1
+C-201,PAV-C,2,Unité de soins,2
+C-312,PAV-C,3,Corridor,1
+C-031,PAV-C,0,Bureau,1
+C-617,PAV-C,6,Stérilisation,3
+C-523,PAV-C,5,Laboratoire,2
+C-148,PAV-C,1,Laboratoire,2
+C-235,PAV-C,2,Unité de soins,2
+C-244,PAV-C,2,Imagerie,2
+C-752,PAV-C,7,Bureau,1
+C-321,PAV-C,3,Urgence,3
+C-635,PAV-C,6,Stérilisation,3
+C-013,PAV-C,0,Laboratoire,2
+C-022,PAV-C,0,Cuisine,2
+C-612,PAV-C,6,Unité de soins,2
+C-221,PAV-C,2,Corridor,1
+C-520,PAV-C,5,Salle mécanique,2
+C-629,PAV-C,6,Unité de soins,2
+C-651,PAV-C,6,Unité de soins,2
+C-126,PAV-C,1,Salle mécanique,2
+C-705,PAV-C,7,Unité de soins,2
+C-224,PAV-C,2,Salle mécanique,2
+C-134,PAV-C,1,Corridor,1
+C-516,PAV-C,5,Salle mécanique,2
+C-032,PAV-C,0,Laboratoire,2
+C-117,PAV-C,1,Unité de soins,2
+C-319,PAV-C,3,Stérilisation,3
+C-746,PAV-C,7,Unité de soins,2
+C-155,PAV-C,1,Imagerie,2
+D-505,PAV-D,5,Unité de soins,2
+D-255,PAV-D,2,Urgence,3
+D-541,PAV-D,5,Bloc opératoire,3
+D-208,PAV-D,2,Bureau,1
+D-132,PAV-D,1,Unité de soins,2
+D-430,PAV-D,4,Corridor,1
+D-457,PAV-D,4,Bureau,1
+D-246,PAV-D,2,Bureau,1
+D-427,PAV-D,4,Bureau,1
+D-021,PAV-D,0,Unité de soins,2
+D-334,PAV-D,3,Bureau,1
+D-412,PAV-D,4,Corridor,1
+D-159,PAV-D,1,Bureau,1
+D-020,PAV-D,0,Bureau,1
+D-215,PAV-D,2,Bureau,1
+D-455,PAV-D,4,Urgence,3
+D-136,PAV-D,1,Corridor,1
+D-535,PAV-D,5,Bureau,1
+D-538,PAV-D,5,Unité de soins,2
+D-558,PAV-D,5,Bureau,1
+D-456,PAV-D,4,Unité de soins,2
+D-050,PAV-D,0,Bloc opératoire,3
+D-537,PAV-D,5,Unité de soins,2
+D-557,PAV-D,5,Unité de soins,2
+D-220,PAV-D,2,Salle mécanique,2
+D-530,PAV-D,5,Bureau,1
+D-027,PAV-D,0,Unité de soins,2
+D-110,PAV-D,1,Bureau,1
+D-556,PAV-D,5,Unité de soins,2
+D-324,PAV-D,3,Unité de soins,2
+D-030,PAV-D,0,Unité de soins,2
+D-307,PAV-D,3,Unité de soins,2
+D-327,PAV-D,3,Unité de soins,2
+D-160,PAV-D,1,Bureau,1
+D-211,PAV-D,2,Unité de soins,2
+D-026,PAV-D,0,Stérilisation,3
+D-123,PAV-D,1,Unité de soins,2
+D-257,PAV-D,2,Bureau,1
+D-057,PAV-D,0,Bureau,1
+D-224,PAV-D,2,Corridor,1
+D-013,PAV-D,0,Corridor,1
+D-233,PAV-D,2,Corridor,1
+D-440,PAV-D,4,Corridor,1
+D-007,PAV-D,0,Unité de soins,2
+D-126,PAV-D,1,Corridor,1
+D-046,PAV-D,0,Salle mécanique,2
+D-310,PAV-D,3,Unité de soins,2
+D-460,PAV-D,4,Unité de soins,2
+D-140,PAV-D,1,Bureau,1
+D-437,PAV-D,4,Bureau,1
+D-044,PAV-D,0,Corridor,1
+D-351,PAV-D,3,Corridor,1
+D-539,PAV-D,5,Corridor,1
+D-550,PAV-D,5,Laboratoire,2
+D-138,PAV-D,1,Laboratoire,2
+D-344,PAV-D,3,Unité de soins,2
+D-408,PAV-D,4,Bloc opératoire,3
+D-150,PAV-D,1,Bureau,1
+D-348,PAV-D,3,Cuisine,2
+D-514,PAV-D,5,Unité de soins,2
+D-525,PAV-D,5,Bureau,1
+D-135,PAV-D,1,Bureau,1
+D-256,PAV-D,2,Salle mécanique,2
+D-517,PAV-D,5,Unité de soins,2
+D-118,PAV-D,1,Soins intensifs,3
+D-120,PAV-D,1,Bloc opératoire,3
+D-546,PAV-D,5,Unité de soins,2
+D-360,PAV-D,3,Bureau,1
+D-508,PAV-D,5,Unité de soins,2
+D-426,PAV-D,4,Bureau,1
+D-119,PAV-D,1,Unité de soins,2
+D-029,PAV-D,0,Urgence,3
+D-513,PAV-D,5,Bureau,1
+D-245,PAV-D,2,Salle mécanique,2
+D-038,PAV-D,0,Corridor,1
+D-034,PAV-D,0,Bureau,1
+D-127,PAV-D,1,Unité de soins,2
+D-350,PAV-D,3,Unité de soins,2
+D-411,PAV-D,4,Soins intensifs,3
+D-313,PAV-D,3,Bureau,1
+D-242,PAV-D,2,Unité de soins,2
+D-015,PAV-D,0,Salle mécanique,2
+D-503,PAV-D,5,Cuisine,2
+D-154,PAV-D,1,Bureau,1
+D-156,PAV-D,1,Bloc opératoire,3
+D-037,PAV-D,0,Unité de soins,2
+D-309,PAV-D,3,Unité de soins,2
+D-352,PAV-D,3,Laboratoire,2
+D-142,PAV-D,1,Laboratoire,2
+D-122,PAV-D,1,Unité de soins,2
+D-413,PAV-D,4,Urgence,3
+D-553,PAV-D,5,Urgence,3
+D-243,PAV-D,2,Unité de soins,2
+D-229,PAV-D,2,Bureau,1
+D-247,PAV-D,2,Unité de soins,2
+D-520,PAV-D,5,Unité de soins,2
+D-241,PAV-D,2,Salle mécanique,2
+D-130,PAV-D,1,Bureau,1
+D-445,PAV-D,4,Bureau,1
+D-144,PAV-D,1,Laboratoire,2
+D-008,PAV-D,0,Urgence,3
+D-155,PAV-D,1,Unité de soins,2
+D-235,PAV-D,2,Salle mécanique,2
+D-031,PAV-D,0,Stérilisation,3
+E-527,PAV-E,5,Salle mécanique,2
+E-359,PAV-E,3,Bureau,1
+E-343,PAV-E,3,Unité de soins,2
+E-123,PAV-E,1,Salle mécanique,2
+E-409,PAV-E,4,Bureau,1
+E-149,PAV-E,1,Bureau,1
+E-247,PAV-E,2,Bureau,1
+E-415,PAV-E,4,Bureau,1
+E-213,PAV-E,2,Unité de soins,2
+E-503,PAV-E,5,Laboratoire,2
+E-360,PAV-E,3,Corridor,1
+E-005,PAV-E,0,Unité de soins,2
+E-044,PAV-E,0,Bureau,1
+E-003,PAV-E,0,Unité de soins,2
+E-019,PAV-E,0,Unité de soins,2
+E-537,PAV-E,5,Corridor,1
+E-516,PAV-E,5,Imagerie,2
+E-134,PAV-E,1,Unité de soins,2
+E-236,PAV-E,2,Unité de soins,2
+E-541,PAV-E,5,Urgence,3
+E-423,PAV-E,4,Laboratoire,2
+E-534,PAV-E,5,Bureau,1
+E-320,PAV-E,3,Bureau,1
+E-455,PAV-E,4,Bureau,1
+E-530,PAV-E,5,Unité de soins,2
+E-427,PAV-E,4,Bureau,1
+E-117,PAV-E,1,Bureau,1
+E-529,PAV-E,5,Unité de soins,2
+E-054,PAV-E,0,Bureau,1
+E-239,PAV-E,2,Bureau,1
+E-049,PAV-E,0,Unité de soins,2
+E-531,PAV-E,5,Corridor,1
+E-259,PAV-E,2,Unité de soins,2
+E-108,PAV-E,1,Soins intensifs,3
+E-345,PAV-E,3,Urgence,3
+E-116,PAV-E,1,Bureau,1
+E-235,PAV-E,2,Bureau,1
+E-233,PAV-E,2,Unité de soins,2
+E-347,PAV-E,3,Unité de soins,2
+E-224,PAV-E,2,Urgence,3
+E-015,PAV-E,0,Corridor,1
+E-060,PAV-E,0,Unité de soins,2
+E-510,PAV-E,5,Bureau,1
+E-154,PAV-E,1,Bureau,1
+E-444,PAV-E,4,Salle mécanique,2
+E-342,PAV-E,3,Cuisine,2
+E-351,PAV-E,3,Unité de soins,2
+E-132,PAV-E,1,Laboratoire,2
+E-404,PAV-E,4,Stérilisation,3
+E-043,PAV-E,0,Bloc opératoire,3
+E-001,PAV-E,0,Salle mécanique,2
+E-340,PAV-E,3,Unité de soins,2
+E-443,PAV-E,4,Urgence,3
+E-027,PAV-E,0,Bureau,1
+E-435,PAV-E,4,Laboratoire,2
+E-045,PAV-E,0,Corridor,1
+E-107,PAV-E,1,Unité de soins,2
+E-226,PAV-E,2,Unité de soins,2
+E-316,PAV-E,3,Bureau,1
+E-153,PAV-E,1,Unité de soins,2
+E-542,PAV-E,5,Stérilisation,3
+E-025,PAV-E,0,Bureau,1
+E-407,PAV-E,4,Bureau,1
+E-058,PAV-E,0,Unité de soins,2
+E-403,PAV-E,4,Bureau,1
+E-558,PAV-E,5,Bloc opératoire,3
+E-560,PAV-E,5,Imagerie,2
+E-038,PAV-E,0,Soins intensifs,3
+E-137,PAV-E,1,Corridor,1
+E-335,PAV-E,3,Salle mécanique,2
+E-545,PAV-E,5,Unité de soins,2
+E-305,PAV-E,3,Unité de soins,2
+E-426,PAV-E,4,Soins intensifs,3
+E-218,PAV-E,2,Unité de soins,2
+E-323,PAV-E,3,Bureau,1
+E-344,PAV-E,3,Bureau,1
+E-106,PAV-E,1,Salle mécanique,2
+E-341,PAV-E,3,Salle mécanique,2
+E-307,PAV-E,3,Unité de soins,2
+E-249,PAV-E,2,Bureau,1
+E-128,PAV-E,1,Unité de soins,2
+F-239,PAV-F,2,Corridor,1
+F-201,PAV-F,2,Cuisine,2
+F-347,PAV-F,3,Laboratoire,2
+F-111,PAV-F,1,Corridor,1
+F-120,PAV-F,1,Unité de soins,2
+F-128,PAV-F,1,Salle mécanique,2
+F-205,PAV-F,2,Bureau,1
+F-132,PAV-F,1,Corridor,1
+F-109,PAV-F,1,Bureau,1
+F-340,PAV-F,3,Unité de soins,2
+F-228,PAV-F,2,Bureau,1
+F-421,PAV-F,4,Laboratoire,2
+F-112,PAV-F,1,Bureau,1
+F-245,PAV-F,2,Unité de soins,2
+F-360,PAV-F,3,Bureau,1
+F-412,PAV-F,4,Bureau,1
+F-447,PAV-F,4,Unité de soins,2
+F-119,PAV-F,1,Bureau,1
+F-051,PAV-F,0,Imagerie,2
+F-320,PAV-F,3,Unité de soins,2
+F-151,PAV-F,1,Salle mécanique,2
+F-331,PAV-F,3,Stérilisation,3
+F-459,PAV-F,4,Corridor,1
+F-351,PAV-F,3,Corridor,1
+F-123,PAV-F,1,Salle mécanique,2
+F-442,PAV-F,4,Salle mécanique,2
+F-322,PAV-F,3,Soins intensifs,3
+F-307,PAV-F,3,Bureau,1
+F-436,PAV-F,4,Laboratoire,2
+F-424,PAV-F,4,Unité de soins,2
+F-410,PAV-F,4,Salle mécanique,2
+F-019,PAV-F,0,Bureau,1
+F-047,PAV-F,0,Unité de soins,2
+F-251,PAV-F,2,Bureau,1
+F-022,PAV-F,0,Unité de soins,2
+F-148,PAV-F,1,Bloc opératoire,3
+F-122,PAV-F,1,Corridor,1
+F-326,PAV-F,3,Unité de soins,2
+F-429,PAV-F,4,Urgence,3
+F-314,PAV-F,3,Unité de soins,2
+F-052,PAV-F,0,Corridor,1
+F-113,PAV-F,1,Bureau,1
+F-232,PAV-F,2,Soins intensifs,3
+F-240,PAV-F,2,Corridor,1
+F-055,PAV-F,0,Bureau,1
+F-146,PAV-F,1,Imagerie,2
+F-444,PAV-F,4,Corridor,1
+F-008,PAV-F,0,Unité de soins,2
+F-127,PAV-F,1,Bureau,1
+F-129,PAV-F,1,Unité de soins,2
+F-333,PAV-F,3,Soins intensifs,3
+F-327,PAV-F,3,Salle mécanique,2
+F-306,PAV-F,3,Bureau,1
+F-118,PAV-F,1,Unité de soins,2
+F-230,PAV-F,2,Unité de soins,2
+F-308,PAV-F,3,Corridor,1
+F-253,PAV-F,2,Laboratoire,2
+F-403,PAV-F,4,Imagerie,2
+F-328,PAV-F,3,Corridor,1
+F-103,PAV-F,1,Unité de soins,2
+F-206,PAV-F,2,Cuisine,2
+F-016,PAV-F,0,Laboratoire,2
+F-456,PAV-F,4,Salle mécanique,2
+F-309,PAV-F,3,Unité de soins,2
+F-137,PAV-F,1,Imagerie,2
+F-211,PAV-F,2,Corridor,1
+F-218,PAV-F,2,Unité de soins,2
+G-244,PAV-G,2,Stérilisation,3
+G-051,PAV-G,0,Soins intensifs,3
+G-056,PAV-G,0,Stérilisation,3
+G-216,PAV-G,2,Cuisine,2
+G-149,PAV-G,1,Urgence,3
+G-137,PAV-G,1,Bureau,1
+G-229,PAV-G,2,Bureau,1
+G-048,PAV-G,0,Bureau,1
+G-132,PAV-G,1,Bureau,1
+G-055,PAV-G,0,Cuisine,2
+G-241,PAV-G,2,Soins intensifs,3
+G-151,PAV-G,1,Cuisine,2
+G-053,PAV-G,0,Soins intensifs,3
+G-119,PAV-G,1,Unité de soins,2
+G-255,PAV-G,2,Unité de soins,2
+G-054,PAV-G,0,Corridor,1
+G-011,PAV-G,0,Bloc opératoire,3
+G-028,PAV-G,0,Stérilisation,3
+G-257,PAV-G,2,Urgence,3
+G-057,PAV-G,0,Cuisine,2
+G-206,PAV-G,2,Bureau,1
+G-226,PAV-G,2,Unité de soins,2
+G-215,PAV-G,2,Salle mécanique,2
+G-001,PAV-G,0,Salle mécanique,2
+G-015,PAV-G,0,Unité de soins,2
+G-145,PAV-G,1,Unité de soins,2
+G-125,PAV-G,1,Unité de soins,2
+G-024,PAV-G,0,Unité de soins,2

@@ -1,0 +1,123 @@
+// Mesures du modèle sémantique, à coller dans la vue de requête DAX de Fabric.
+// 1. Exécute la requête et compare les résultats à valeurs_attendues.csv.
+// 2. Clique sur « Update model with changes » pour enregistrer les mesures dans le modèle.
+
+DEFINE
+    /// Bons non annulés.
+    MEASURE gold_fait_bons[Nb bons] =
+        CALCULATE(COUNTROWS(gold_fait_bons), KEEPFILTERS(gold_fait_bons[statut] <> "Annulé"))
+
+    MEASURE gold_fait_bons[Nb bons fermés] = SUM(gold_fait_bons[est_ferme])
+
+    MEASURE gold_fait_bons[Nb bons ouverts] =
+        CALCULATE(
+            COUNTROWS(gold_fait_bons),
+            KEEPFILTERS(gold_fait_bons[statut] IN {"Ouvert", "Assigné", "En cours"})
+        )
+
+    /// Fermés par mois de fermeture, grâce à la relation inactive.
+    MEASURE gold_fait_bons[Bons fermés par date de fermeture] =
+        CALCULATE(
+            [Nb bons fermés],
+            USERELATIONSHIP(gold_fait_bons[date_fermeture_jour], gold_dim_date[date])
+        )
+
+    /// Coût des bons fermés, rattaché à leur date de création.
+    MEASURE gold_fait_bons[Coût total] = SUM(gold_fait_bons[cout_total])
+
+    MEASURE gold_fait_bons[Coût moyen par bon fermé] = DIVIDE([Coût total], [Nb bons fermés])
+
+    MEASURE gold_fait_bons[Coût par m²] = DIVIDE([Coût total], SUM(gold_dim_pavillon[superficie_m2]))
+
+    MEASURE gold_fait_bons[Coût cumulé annuel] = TOTALYTD([Coût total], gold_dim_date[date])
+
+    MEASURE gold_fait_bons[Délai moyen de fermeture (h)] = AVERAGE(gold_fait_bons[delai_fermeture_heures])
+
+    MEASURE gold_fait_bons[Délai moyen de fermeture (jours)] = DIVIDE([Délai moyen de fermeture (h)], 24)
+
+    MEASURE gold_fait_bons[Délai médian de fermeture (h)] = MEDIAN(gold_fait_bons[delai_fermeture_heures])
+
+    /// Part des bons fermés dans la cible de leur priorité.
+    MEASURE gold_fait_bons[Taux de respect de la cible] =
+        DIVIDE(SUM(gold_fait_bons[est_cible_respectee]), COUNT(gold_fait_bons[est_cible_respectee]))
+
+    MEASURE gold_fait_bons[Nb récidives] = SUM(gold_fait_bons[est_recidive])
+
+    /// Bon correctif non annulé, créé au plus 30 jours après le précédent du même local et de la même catégorie.
+    MEASURE gold_fait_bons[Taux de récidive] =
+        DIVIDE([Nb récidives], SUM(gold_fait_bons[est_admissible_recidive]))
+
+    MEASURE gold_fait_bons[Coût des récidives] =
+        CALCULATE([Coût total], KEEPFILTERS(gold_fait_bons[est_recidive] = 1))
+
+    MEASURE gold_fait_bons[Part du coût en récidive] = DIVIDE([Coût des récidives], [Coût total])
+
+    MEASURE gold_fait_bons[Nb dégâts d'eau] =
+        CALCULATE([Nb bons], KEEPFILTERS(gold_fait_bons[categorie] = "Dégât d'eau"))
+
+    MEASURE gold_fait_bons[Coût des dégâts d'eau] =
+        CALCULATE([Coût total], KEEPFILTERS(gold_fait_bons[categorie] = "Dégât d'eau"))
+
+    /// Compare des superficies : à utiliser par pavillon ou pour tout l'hôpital.
+    MEASURE gold_fait_bons[Dégâts d'eau par 10 000 m²] =
+        DIVIDE([Nb dégâts d'eau], SUM(gold_dim_pavillon[superficie_m2])) * 10000
+
+    /// Même période l'an dernier, limitée à la dernière date de données pour ne pas comparer 9 mois à 12.
+    MEASURE gold_fait_bons[Nb bons N-1] =
+        VAR DerniereDate = CALCULATE(MAX(gold_fait_bons[date_creation_jour]), ALL(gold_fait_bons))
+        VAR Periode = FILTER(VALUES(gold_dim_date[date]), gold_dim_date[date] <= DerniereDate)
+        RETURN CALCULATE([Nb bons], SAMEPERIODLASTYEAR(Periode))
+
+    MEASURE gold_fait_bons[Variation annuelle des bons] =
+        DIVIDE([Nb bons] - [Nb bons N-1], [Nb bons N-1])
+
+    /// Bons exclus de tous les chiffres du rapport.
+    MEASURE gold_fait_bons[Nb bons en quarantaine] = COUNTROWS(silver_quarantaine)
+
+// Contexte « Global »
+EVALUATE
+ROW(
+    "Nb bons", [Nb bons],
+    "Nb bons fermés", [Nb bons fermés],
+    "Nb bons ouverts", [Nb bons ouverts],
+    "Coût total", [Coût total],
+    "Coût moyen par bon fermé", [Coût moyen par bon fermé],
+    "Coût par m²", [Coût par m²],
+    "Délai moyen de fermeture (h)", [Délai moyen de fermeture (h)],
+    "Délai médian de fermeture (h)", [Délai médian de fermeture (h)],
+    "Taux de respect de la cible", [Taux de respect de la cible],
+    "Nb récidives", [Nb récidives],
+    "Taux de récidive", [Taux de récidive],
+    "Coût des récidives", [Coût des récidives],
+    "Part du coût en récidive", [Part du coût en récidive],
+    "Nb dégâts d'eau", [Nb dégâts d'eau],
+    "Coût des dégâts d'eau", [Coût des dégâts d'eau],
+    "Dégâts d'eau par 10 000 m²", [Dégâts d'eau par 10 000 m²],
+    "Nb bons en quarantaine", [Nb bons en quarantaine]
+)
+
+// Contextes « PAV-A » à « PAV-G »
+EVALUATE
+SUMMARIZECOLUMNS(
+    gold_dim_pavillon[pavillon_id],
+    "Nb bons", [Nb bons],
+    "Coût total", [Coût total],
+    "Coût par m²", [Coût par m²],
+    "Délai moyen de fermeture (h)", [Délai moyen de fermeture (h)],
+    "Taux de récidive", [Taux de récidive],
+    "Dégâts d'eau par 10 000 m²", [Dégâts d'eau par 10 000 m²]
+)
+
+// Contexte « Année 2026 »
+EVALUATE
+CALCULATETABLE(
+    ROW(
+        "Nb bons", [Nb bons],
+        "Nb bons N-1", [Nb bons N-1],
+        "Variation annuelle des bons", [Variation annuelle des bons],
+        "Coût total", [Coût total],
+        "Coût cumulé annuel", CALCULATE([Coût cumulé annuel], gold_dim_date[date] = DATE(2026, 9, 30)),
+        "Bons fermés par date de fermeture", [Bons fermés par date de fermeture]
+    ),
+    gold_dim_date[annee] = 2026
+)

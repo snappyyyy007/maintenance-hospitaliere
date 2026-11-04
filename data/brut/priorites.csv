@@ -1,0 +1,5 @@
+priorite,libelle,cible_fermeture_heures
+P1,Urgence,12
+P2,Élevée,48
+P3,Normale,120
+P4,Planifiée,720

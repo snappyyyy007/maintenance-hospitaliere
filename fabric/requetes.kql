@@ -1,0 +1,76 @@
+// Requêtes de la base KQL. Dans un ensemble de requêtes, place le curseur dans un bloc et exécute-le.
+// Les blocs 2 à 6 partent du dernier événement reçu : ils fonctionnent aussi sur le fichier de démo.
+
+// 1. Création de la table (une seule fois)
+.create table capteurs_fuite (
+    capteur_id: string,
+    horodatage: datetime,
+    pavillon_id: string,
+    local_id: string,
+    etage: int,
+    type_local: string,
+    criticite: int,
+    humidite_pct: real,
+    temperature_c: real,
+    eau_detectee: bool,
+    batterie_pct: real
+)
+
+// 2. Fuites confirmées : au moins 3 détections en 2 minutes sur le même capteur.
+// Une ligne par fuite, au moment de sa confirmation. À comparer à data/capteurs/attendu_kql.csv.
+capteurs_fuite
+| where eau_detectee
+| distinct capteur_id, horodatage, pavillon_id, local_id, etage, type_local, criticite
+| sort by capteur_id asc, horodatage asc
+| extend est_confirme = prev(capteur_id, 2) == capteur_id and horodatage - prev(horodatage, 2) <= 2m
+| extend est_premiere = est_confirme and not(prev(capteur_id) == capteur_id and prev(est_confirme) == true)
+| where est_premiere
+| project heure_confirmation = horodatage, capteur_id, pavillon_id, local_id, etage, type_local, criticite
+| sort by heure_confirmation asc
+
+// 3. Fausses alarmes : capteurs qui ont détecté de l'eau sans jamais atteindre la confirmation.
+let confirmes = capteurs_fuite
+    | where eau_detectee
+    | distinct capteur_id, horodatage
+    | sort by capteur_id asc, horodatage asc
+    | where prev(capteur_id, 2) == capteur_id and horodatage - prev(horodatage, 2) <= 2m
+    | distinct capteur_id;
+capteurs_fuite
+| where eau_detectee and capteur_id !in (confirmes)
+| distinct capteur_id, horodatage, local_id
+| summarize detections = count() by capteur_id, local_id
+| sort by capteur_id asc
+
+// 4. Capteurs silencieux : aucun message depuis plus de 5 minutes.
+let fin = toscalar(capteurs_fuite | summarize max(horodatage));
+capteurs_fuite
+| summarize arg_max(horodatage, local_id, batterie_pct) by capteur_id
+| where horodatage < fin - 5m
+| project capteur_id, local_id, dernier_message = horodatage, batterie_pct
+
+// 5. État actuel de chaque capteur.
+capteurs_fuite
+| summarize arg_max(horodatage, *) by capteur_id
+| project capteur_id, pavillon_id, local_id, type_local, horodatage, humidite_pct, eau_detectee, batterie_pct
+| sort by humidite_pct desc
+
+// 6. Humidité maximale par pavillon, par tranche de 5 minutes.
+capteurs_fuite
+| summarize humidite_max = max(humidite_pct) by pavillon_id, bin(horodatage, 5m)
+| render timechart
+
+// 7. Requête de l'alerte Activator, à exécuter toutes les 5 minutes.
+// Activator envoie une alerte par ligne : chaque fuite ne doit donc sortir qu'à une seule exécution.
+// La fenêtre de 5 minutes finit 1 minute avant maintenant, pour laisser arriver les messages en retard.
+// Elle reste vide sur le fichier de démo, car ses événements sont dans le passé.
+let fin_fenetre = now() - 1m;
+let debut_fenetre = fin_fenetre - 5m;
+capteurs_fuite
+| where horodatage > debut_fenetre - 15m and eau_detectee
+| distinct capteur_id, horodatage, pavillon_id, local_id, etage, type_local, criticite
+| sort by capteur_id asc, horodatage asc
+| extend est_confirme = prev(capteur_id, 2) == capteur_id and horodatage - prev(horodatage, 2) <= 2m
+| extend est_premiere = est_confirme and not(prev(capteur_id) == capteur_id and prev(est_confirme) == true)
+| where est_premiere and horodatage > debut_fenetre and horodatage <= fin_fenetre
+| extend urgence = iff(criticite == 3, "Critique", "Normale")
+| project heure_confirmation = horodatage, capteur_id, pavillon_id, local_id, type_local, urgence

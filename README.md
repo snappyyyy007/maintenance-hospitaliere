@@ -13,7 +13,7 @@ Plateforme de données de bout en bout sur Microsoft Fabric pour suivre les bons
 | 2. Ingestion | Pipeline Data Factory vers OneLake | Préparé, à construire dans Fabric ([guide](fabric/pipeline.md)) |
 | 3. Transformation | Notebooks PySpark bronze, silver, gold | Testé en local, à importer dans Fabric |
 | 4. Rapport | Modèle sémantique, mesures DAX, Power BI | Préparé, à construire dans Fabric ([guide](powerbi/modele_semantique.md)) |
-| 5. Bonus | Capteurs de fuite simulés, KQL, alerte | À faire |
+| 5. Bonus | Capteurs de fuite simulés, KQL, alerte | Préparé, à construire dans Fabric ([guide](fabric/temps_reel.md)) |
 | 6. Bonus | Agent Azure AI Foundry | À faire |
 
 ## Générer et valider les données
@@ -76,6 +76,16 @@ Le dossier `powerbi/` se suit dans le navigateur, sans Power BI Desktop :
 | `valeurs_attendues.csv` | Résultat attendu de chaque mesure, calculé en SQL par `tester_notebooks.py` |
 
 Le DAX n'a pas encore été exécuté : le test local contrôle ses références, pas ses résultats.
+
+## Temps réel
+
+`scripts/simuler_capteurs.py` simule 40 capteurs de fuite d'eau, vers un fichier ou un Eventstream. `fabric/requetes.kql` contient la règle qui confirme les fuites, et `fabric/temps_reel.md` explique le montage et l'alerte Activator.
+
+```bash
+python3 scripts/tester_capteurs.py
+```
+
+Ce test vérifie le simulateur et une traduction Python de la règle, sans dépendance externe. Les requêtes KQL et l'envoi réel n'ont pas encore été exécutés ; `data/capteurs/attendu_kql.csv` donne les résultats à retrouver dans Fabric. `verite_demo.json` est le corrigé du scénario : ne le charge pas dans Fabric.
 
 ## Le jeu de données
 

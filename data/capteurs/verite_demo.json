@@ -1,0 +1,44 @@
+{
+  "graine": 42,
+  "debut": "2026-11-03T08:00:00Z",
+  "minutes": 60,
+  "nb_capteurs": 40,
+  "fuites": [
+    {
+      "capteur_id": "CAP-021",
+      "local_id": "B-607",
+      "debut": "2026-11-03T08:12:00Z",
+      "fin": "2026-11-03T08:21:00Z",
+      "origine": null
+    },
+    {
+      "capteur_id": "CAP-019",
+      "local_id": "B-505",
+      "debut": "2026-11-03T08:18:00Z",
+      "fin": "2026-11-03T08:27:00Z",
+      "origine": "CAP-021"
+    },
+    {
+      "capteur_id": "CAP-024",
+      "local_id": "C-527",
+      "debut": "2026-11-03T08:27:00Z",
+      "fin": "2026-11-03T08:36:00Z",
+      "origine": null
+    },
+    {
+      "capteur_id": "CAP-036",
+      "local_id": "F-228",
+      "debut": "2026-11-03T08:42:00Z",
+      "fin": "2026-11-03T08:51:00Z",
+      "origine": null
+    }
+  ],
+  "fausses_alarmes": [
+    "CAP-038",
+    "CAP-008",
+    "CAP-032",
+    "CAP-027"
+  ],
+  "capteur_silencieux": "CAP-016",
+  "nb_evenements": 4725
+}

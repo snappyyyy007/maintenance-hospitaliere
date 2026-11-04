@@ -1,0 +1,10 @@
+requete,heure,capteur_id,local_id,detail
+2. Fuite confirmée,2026-11-03T08:13:05Z,CAP-021,B-607,Unité de soins
+2. Fuite confirmée,2026-11-03T08:19:03Z,CAP-019,B-505,Soins intensifs
+2. Fuite confirmée,2026-11-03T08:28:08Z,CAP-024,C-527,Bloc opératoire
+2. Fuite confirmée,2026-11-03T08:43:32Z,CAP-036,F-228,Bureau
+3. Fausse alarme,,CAP-008,A-514,1 détection(s)
+3. Fausse alarme,,CAP-027,C-612,1 détection(s)
+3. Fausse alarme,,CAP-032,D-440,2 détection(s)
+3. Fausse alarme,,CAP-038,F-306,1 détection(s)
+4. Capteur silencieux,2026-11-03T08:35:30Z,CAP-016,B-418,
